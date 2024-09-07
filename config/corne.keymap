@@ -12,27 +12,37 @@
   / {
     keymap {
       compatible = "zmk,keymap";
-  layer0 {
+      layer0 {
           bindings = <
           &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp LEFT_GUI &kp A &kp S &kp D &kp F &kp G &kp LEFT_SHIFT &kp Z &kp X &kp C &kp V &kp B &none &none &none &kp LEFT_CONTROL [[FN_MO13]] &kp SPACE &kp ESCAPE &kp P &kp O &kp I &kp U &kp Y &kp BACKSPACE &kp SEMICOLON &kp L &kp K &kp J &kp H &kp LEFT_SHIFT &kp SLASH &kp DOT &kp COMMA &kp M &kp N &none &none &none &kp LEFT_CONTROL [[FN_MO23]] &kp ENTER
           >;
-        };layer1 {
+        };
+
+      layer1 {
           bindings = <
           &kp LEFT_BRACKET &kp MINUS &mt LEFT_SHIFT SLASH [[RALT(KC_8)]] [[RALT(KC_9)]] &kp GRAVE &kp SINGLE_QUOTE [[RALT(KC_MINS)]] &mt LEFT_SHIFT N7 [[RALT(KC_7)]] [[RALT(KC_0)]] &mt LEFT_SHIFT RIGHT_BRACKET &trans &kp BACKSLASH &mt LEFT_SHIFT N4 [[RALT(KC_NUBS)]] [[RALT(KC_RBRC)]] &mt LEFT_SHIFT EQUAL &none &none &none &trans &trans &kp SPACE &trans &mt LEFT_SHIFT N6 &mt LEFT_SHIFT N0 &mt LEFT_SHIFT NON_US_BACKSLASH &kp NON_US_BACKSLASH &mt LEFT_SHIFT N1 [[RALT(KC_Q)]] &mt LEFT_SHIFT DOT &kp SLASH &mt LEFT_SHIFT N9 &mt LEFT_SHIFT N8 &mt LEFT_SHIFT MINUS &trans &mt LEFT_SHIFT COMMA &mt LEFT_SHIFT BACKSLASH &mt LEFT_SHIFT N2 &mt LEFT_SHIFT N5 &kp RIGHT_BRACKET &none &none &none &trans &trans &tog 3
           >;
-        };layer2 {
+        };
+        
+      layer2 {
           bindings = <
           &trans &to 4 &none &none &none &none &trans &none &none &none [[C(KC_K)]] &none &trans &none &none &none &none &none &none &none &none &trans &trans &kp SPACE &trans &none &kp END [[A(KC_F)]] [[A(KC_B)]] &kp HOME &trans &none &kp RIGHT &kp UP &kp DOWN &kp LEFT &trans &none &none &none &none &none &none &none &none &trans &trans &kp ENTER
           >;
-        };layer3 {
+        };
+
+      layer3 {
           bindings = <
           &trans [[G(KC_1)]] [[G(KC_2)]] [[G(KC_3)]] [[G(KC_4)]] [[G(KC_5)]] &trans &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &trans &none &none &none &none &none &none &none &none &trans &trans &kp SPACE &tog 3 &mt LEFT_SHIFT DOT [[G(KC_9)]] [[G(KC_8)]] [[G(KC_7)]] [[G(KC_6)]] &kp BACKSPACE &kp N0 &kp N9 &kp N8 &kp N7 &kp N6 &trans &kp SLASH &kp DOT &kp COMMA &none &none &none &none &none &trans &trans &tog 3
           >;
-        };layer4 {
+        };
+
+    layer4 {
           bindings = <
           &trans &none &none &none &none &none &trans &none &none &none &none &none &trans &none &none &none &none &none &trans &trans &trans &trans &trans &trans &to 0 &none [[RGB_MOD]] [[RGB_VAI]] [[RGB_VAD]] [[RGB_RMOD]] &trans &none [[RGB_SPI]] [[RGB_HUI]] [[RGB_HUD]] [[RGB_SPD]] &trans &none &none [[RGB_SAI]] [[RGB_SAD]] &none &trans &trans &trans &trans &trans &trans
           >;
-        };layer5 {
+        };
+
+      layer5 {
           bindings = <
           &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
           >;
